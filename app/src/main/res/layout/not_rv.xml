@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/kirikbeyaz"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="4dp"
+            android:text="Başlık"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:padding="4dp"
+            android:text="Burada not yazacak"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/not"
+            android:textColor="@color/black"
+            android:text="21.34.56"
+            android:layout_margin="4dp"
+            android:padding="4dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

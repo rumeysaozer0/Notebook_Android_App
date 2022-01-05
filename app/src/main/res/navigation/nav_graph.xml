@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.rumeysaozer.notdefteri.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris">
+        <action
+            android:id="@+id/action_girisFragment_to_notEkleFragment2"
+            app:destination="@id/notEkleFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/notEkleFragment2"
+        android:name="com.rumeysaozer.notdefteri.NotEkleFragment"
+        android:label="fragment_not_ekle"
+        tools:layout="@layout/fragment_not_ekle" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="not"
+            app:argType="string" />
+        <argument
+            android:name="id1"
+            app:argType="integer" />
+        <argument
+            android:name="type"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_notEkleFragment2_to_girisFragment"
+            app:destination="@id/girisFragment" />
+    </fragment>
+</navigation>
